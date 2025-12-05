@@ -1,0 +1,9 @@
+host,url,status,title,hosting_provider,ip,cname_chain
+shop.resmed.co.in,https://shop.resmed.co.in,200,Resmed India,Cloudflare,23.227.38.74,resmed-india.myshopify.com;shops.myshopify.com
+www.resmed.ph,https://www.resmed.ph,200,Changing lives with every breath | ResMed - PH,Cloudflare,15.197.192.17,
+shop.edensleep.co.nz,https://shop.edensleep.co.nz,200,"Buy CPAP Machines, Masks & Supplies Online | EdenSleep",Cloudflare,15.197.192.17,
+shop.resmed.com.au,https://shop.resmed.com.au,200,Official Resmed Australia Shop | CPAP Machines and Supplies,Cloudflare,23.227.38.74,shops.myshopify.com
+shop.resmed.sg,https://shop.resmed.sg,200,ResMed Singapore,Cloudflare,23.227.38.74,resmed-singapore.myshopify.com;shops.myshopify.com
+www.resmed.tw,https://www.resmed.tw,200,改變生命的每次呼吸 | ResMed,Cloudflare,184.29.208.111,
+support.resmed.com,https://support.resmed.com,200,,Akamai,184.29.208.111,support.resmed.com.edgekey.net;e4822.x.akamaiedge.net
+eshop.resmed.com,https://eshop.resmed.com,200,"CPAP Masks, Devices & Accessories - ResMed Shop",Cloudflare,184.29.208.111,shop.resmed.com.edgekey.net;e4822.x.akamaiedge.net

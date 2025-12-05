@@ -85,12 +85,37 @@ Multi-phase site discovery:
 
 **Filters**: Excludes dev/staging/admin/test/api domains and login/404 pages.
 
+## Multi-Agent Analysis
+
+This project is configured for parallel analysis using 4 agents.
+
+**Quick Start**:
+```bash
+# Split sites into chunks (already done)
+python scripts/split_sites.py
+
+# Run your multi-agent tool with the chunks
+# Each agent analyzes 8 sites in parallel
+# See docs/MULTI_AGENT_SETUP.md for details
+```
+
+**Documentation**:
+- [`docs/MULTI_AGENT_SETUP.md`](docs/MULTI_AGENT_SETUP.md) - Agent configuration and execution
+- [`docs/AGENT_TASK_INSTRUCTIONS.md`](docs/AGENT_TASK_INSTRUCTIONS.md) - Detailed analysis instructions
+
+**Input**: `data/chunks/chunk_N_urls.json` (N=1-4)
+**Output**: `data/analysis/analysis_chunk_N.md`
+**Consolidate**: `python scripts/consolidate_analysis.py`
+
 ## Next Steps
 
-1. Complete site enumeration (target: 117 sites)
-2. Secure access to WordPress/HubSpot admin panels
-3. Begin HTML consistency analysis (THE CRITICAL TASK)
-4. Schedule stakeholder interviews for CMS requirements
+1. ✅ Sites cataloged (32 sites discovered)
+2. ✅ Chunks created (4 chunks of 8 sites each)
+3. **→ Run multi-agent HTML analysis** (THE CRITICAL TASK)
+4. Consolidate agent reports
+5. Generate final migration plan
+6. Secure access to WordPress/HubSpot admin panels (for pilot migration)
+7. Schedule stakeholder interviews for CMS requirements
 
 ## Notes
 

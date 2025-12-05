@@ -1,0 +1,9 @@
+host,url,status,title,hosting_provider,ip,cname_chain
+www.resmed.jp,https://www.resmed.jp,200,ResMed（レスメド） | 睡眠時無呼吸と呼吸器疾患向けの医療機器メーカー,Cloudflare,15.197.192.17,
+www.resmed.com.br,https://www.resmed.com.br,200,Apneia do Sono e Saúde Respiratória | ResMed Brasil,Cloudflare,15.197.192.17,
+www.resmed.sg,https://www.resmed.sg,200,ResMed SG I CPAP & Sleep Health Solutions for Sleep Apnea and COPD,Cloudflare,184.29.208.111,
+www.resmed.be,https://www.resmed.be,200,Apnée du sommeil et maladies respiratoires | Resmed Belgique,,184.29.208.111,
+www.resmed.co.th,https://www.resmed.co.th,200,ResMed Thailand | Changing lives with every breath,Cloudflare,15.197.192.17,
+resmed.com.cn,https://resmed.com.cn,200,瑞思迈ResMed官方网站—家用睡眠呼吸机，医用呼吸机，多导睡眠监测，改善打鼾、睡眠呼吸暂停OSA、慢阻肺COPD,Nginx (self-hosted),47.104.31.38,
+www.resmed.hk,https://www.resmed.hk,200,ResMed HK | 適用於睡眠窒息症和慢性阻塞性肺病的 CPAP 和睡眠健康解決方案,Cloudflare,15.197.192.17,
+www.resmed.com.au,https://www.resmed.com.au,200,"Resmed | Sleep Apnea, Insomnia, CPAP & Snoring Solutions",Cloudflare,15.197.192.17,

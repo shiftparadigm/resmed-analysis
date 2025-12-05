@@ -1,0 +1,14 @@
+{
+  "chunk": 2,
+  "total_chunks": 4,
+  "sites": [
+    "https://www.resmed.jp",
+    "https://www.resmed.com.br",
+    "https://www.resmed.sg",
+    "https://www.resmed.be",
+    "https://www.resmed.co.th",
+    "https://resmed.com.cn",
+    "https://www.resmed.hk",
+    "https://www.resmed.com.au"
+  ]
+}

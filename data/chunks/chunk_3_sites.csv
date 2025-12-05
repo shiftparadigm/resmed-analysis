@@ -1,0 +1,10 @@
+host,url,status,title,hosting_provider,ip,cname_chain
+www.resmed.my,https://www.resmed.my,200,Changing lives with every breath | ResMed - MY,Cloudflare,15.197.192.17,
+www.resmed.kr,https://www.resmed.kr,200,글로벌 수면솔루션 레즈메드,Cloudflare,15.197.192.17,
+www.resmed.la,https://www.resmed.la,200,Changing lives with every breath | ResMed - LA,Cloudflare,15.197.192.17,
+resmed.cl,https://resmed.cl,200,Resmed | Servicio de Traslado de Pacientes - Resmed,Apache (self-hosted),200.73.113.130,
+www.resmed.lat,https://www.resmed.lat,200,Home,Cloudflare,15.197.192.17,
+www.resmed.mx,https://www.resmed.mx,200,Home | ResMed | Apnea del sueño | afecciones respiratorias | sueño,Cloudflare,15.197.192.17,
+shop.resmed.jp,https://shop.resmed.jp,200,"【公式】レスメドオンラインショップ | CPAP・睡眠専門店
+– レスメドのオンラインスリープストア",Cloudflare,23.227.38.74,resmed-japan-ala.myshopify.com;shops.myshopify.com
+www.resmed.vn,https://www.resmed.vn,200,Changing lives with every breath | ResMed - VN,Cloudflare,15.197.192.17,

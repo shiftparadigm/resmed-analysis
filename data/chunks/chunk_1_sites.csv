@@ -1,0 +1,9 @@
+host,url,status,title,hosting_provider,ip,cname_chain
+careers.resmed.com,https://careers.resmed.com,200,Careers at Resmed,Akamai,184.29.208.111,careers.resmed.com.edgekey.net;e4822.dscx.akamaiedge.net
+ivapscalculator.resmed.com,https://ivapscalculator.resmed.com,200,iVAPS Calculator,Amazon CloudFront,54.192.100.36,
+investor.resmed.com,https://investor.resmed.com,200,ResMed Inc. (RMD),Amazon CloudFront,54.192.100.34,investors.resmed.com.web-geo.equisolve.com
+newsroom.resmed.com,https://newsroom.resmed.com,200,Newsroom | Resmed Inc,Cloudflare,162.159.130.11,webfarm-202.q4web.com
+ap.resmed.com,https://ap.resmed.com,200,Home Page - B2B,Cloudflare,199.60.103.226,3445757g7.secure0165.hubspot.net;3445757.group7.sites.hubspot.net;group7.sites.hscoscdn00.net
+www.resmed.com.cn,https://www.resmed.com.cn,200,瑞思迈ResMed官方网站—家用睡眠呼吸机，医用呼吸机，多导睡眠监测，改善打鼾、睡眠呼吸暂停OSA、慢阻肺COPD,Akamai,184.29.208.111,san.resmed.com.edgekey.net;e4822.x.akamaiedge.net
+www.resmed.co.in,https://www.resmed.co.in,200,"Sleep Apnea and Snoring Solution, CPAP Device, Respiratory Care at ResMed India",Cloudflare,15.197.192.17,
+www.resmed.co.id,https://www.resmed.co.id,200,Changing lives with every breath | ResMed - ID,Cloudflare,15.197.192.17,
