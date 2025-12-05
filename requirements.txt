@@ -1,0 +1,4 @@
+httpx[http2]>=0.24.0
+parsel>=1.8.0
+tldextract>=3.4.0
+dnspython>=2.3.0

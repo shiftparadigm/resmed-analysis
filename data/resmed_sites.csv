@@ -1,0 +1,34 @@
+host,url,status,title,hosting_provider,ip,cname_chain
+careers.resmed.com,https://careers.resmed.com,200,Careers at Resmed,Akamai,184.29.208.111,careers.resmed.com.edgekey.net;e4822.dscx.akamaiedge.net
+ivapscalculator.resmed.com,https://ivapscalculator.resmed.com,200,iVAPS Calculator,Amazon CloudFront,54.192.100.36,
+investor.resmed.com,https://investor.resmed.com,200,ResMed Inc. (RMD),Amazon CloudFront,54.192.100.34,investors.resmed.com.web-geo.equisolve.com
+newsroom.resmed.com,https://newsroom.resmed.com,200,Newsroom | Resmed Inc,Cloudflare,162.159.130.11,webfarm-202.q4web.com
+ap.resmed.com,https://ap.resmed.com,200,Home Page - B2B,Cloudflare,199.60.103.226,3445757g7.secure0165.hubspot.net;3445757.group7.sites.hubspot.net;group7.sites.hscoscdn00.net
+www.resmed.com.cn,https://www.resmed.com.cn,200,瑞思迈ResMed官方网站—家用睡眠呼吸机，医用呼吸机，多导睡眠监测，改善打鼾、睡眠呼吸暂停OSA、慢阻肺COPD,Akamai,184.29.208.111,san.resmed.com.edgekey.net;e4822.x.akamaiedge.net
+www.resmed.co.in,https://www.resmed.co.in,200,"Sleep Apnea and Snoring Solution, CPAP Device, Respiratory Care at ResMed India",Cloudflare,15.197.192.17,
+www.resmed.co.id,https://www.resmed.co.id,200,Changing lives with every breath | ResMed - ID,Cloudflare,15.197.192.17,
+www.resmed.jp,https://www.resmed.jp,200,ResMed（レスメド） | 睡眠時無呼吸と呼吸器疾患向けの医療機器メーカー,Cloudflare,15.197.192.17,
+www.resmed.com.br,https://www.resmed.com.br,200,Apneia do Sono e Saúde Respiratória | ResMed Brasil,Cloudflare,15.197.192.17,
+www.resmed.sg,https://www.resmed.sg,200,ResMed SG I CPAP & Sleep Health Solutions for Sleep Apnea and COPD,Cloudflare,184.29.208.111,
+www.resmed.be,https://www.resmed.be,200,Apnée du sommeil et maladies respiratoires | Resmed Belgique,,184.29.208.111,
+www.resmed.co.th,https://www.resmed.co.th,200,ResMed Thailand | Changing lives with every breath,Cloudflare,15.197.192.17,
+resmed.com.cn,https://resmed.com.cn,200,瑞思迈ResMed官方网站—家用睡眠呼吸机，医用呼吸机，多导睡眠监测，改善打鼾、睡眠呼吸暂停OSA、慢阻肺COPD,Nginx (self-hosted),47.104.31.38,
+www.resmed.hk,https://www.resmed.hk,200,ResMed HK | 適用於睡眠窒息症和慢性阻塞性肺病的 CPAP 和睡眠健康解決方案,Cloudflare,15.197.192.17,
+www.resmed.com.au,https://www.resmed.com.au,200,"Resmed | Sleep Apnea, Insomnia, CPAP & Snoring Solutions",Cloudflare,15.197.192.17,
+www.resmed.my,https://www.resmed.my,200,Changing lives with every breath | ResMed - MY,Cloudflare,15.197.192.17,
+www.resmed.kr,https://www.resmed.kr,200,글로벌 수면솔루션 레즈메드,Cloudflare,15.197.192.17,
+www.resmed.la,https://www.resmed.la,200,Changing lives with every breath | ResMed - LA,Cloudflare,15.197.192.17,
+resmed.cl,https://resmed.cl,200,Resmed | Servicio de Traslado de Pacientes - Resmed,Apache (self-hosted),200.73.113.130,
+www.resmed.lat,https://www.resmed.lat,200,Home,Cloudflare,15.197.192.17,
+www.resmed.mx,https://www.resmed.mx,200,Home | ResMed | Apnea del sueño | afecciones respiratorias | sueño,Cloudflare,15.197.192.17,
+shop.resmed.jp,https://shop.resmed.jp,200,"【公式】レスメドオンラインショップ | CPAP・睡眠専門店
+– レスメドのオンラインスリープストア",Cloudflare,23.227.38.74,resmed-japan-ala.myshopify.com;shops.myshopify.com
+www.resmed.vn,https://www.resmed.vn,200,Changing lives with every breath | ResMed - VN,Cloudflare,15.197.192.17,
+shop.resmed.co.in,https://shop.resmed.co.in,200,Resmed India,Cloudflare,23.227.38.74,resmed-india.myshopify.com;shops.myshopify.com
+www.resmed.ph,https://www.resmed.ph,200,Changing lives with every breath | ResMed - PH,Cloudflare,15.197.192.17,
+shop.edensleep.co.nz,https://shop.edensleep.co.nz,200,"Buy CPAP Machines, Masks & Supplies Online | EdenSleep",Cloudflare,15.197.192.17,
+shop.resmed.com.au,https://shop.resmed.com.au,200,Official Resmed Australia Shop | CPAP Machines and Supplies,Cloudflare,23.227.38.74,shops.myshopify.com
+shop.resmed.sg,https://shop.resmed.sg,200,ResMed Singapore,Cloudflare,23.227.38.74,resmed-singapore.myshopify.com;shops.myshopify.com
+www.resmed.tw,https://www.resmed.tw,200,改變生命的每次呼吸 | ResMed,Cloudflare,184.29.208.111,
+support.resmed.com,https://support.resmed.com,200,,Akamai,184.29.208.111,support.resmed.com.edgekey.net;e4822.x.akamaiedge.net
+eshop.resmed.com,https://eshop.resmed.com,200,"CPAP Masks, Devices & Accessories - ResMed Shop",Cloudflare,184.29.208.111,shop.resmed.com.edgekey.net;e4822.x.akamaiedge.net
