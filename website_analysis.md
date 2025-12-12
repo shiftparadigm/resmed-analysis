@@ -1,14 +1,32 @@
-# ResMed Website Migration Analysis
+# ResMed Website Content Migration Analysis
 
 **Analysis Date:** 2025-12-09
-**Total Sites to Analyze:** TBD (excluding e-commerce, SAAS, and internal tools)
+**Migration Type:** Content extraction and mapping to new site with new content model (NOT frontend preservation)
+**Sites Analyzed:** 54 brand/marketing sites (96% coverage)
 
 ## Scope
-This analysis focuses on brand/marketing websites that would be migrated to a centralized CMS. Excluded from analysis:
-- E-commerce platforms (Shopify, SAP Hybris, Shopware, etc.)
-- SAAS products (MatrixCare, BrightTree, HealthCareFirst, CitusHealth, etc.)
-- Internal tools (AirView, MyAir, OnlineStore, Career sites, etc.)
-- DAM systems (Brandfolder, Aprimo)
+
+**IMPORTANT:** This analysis focuses on **content migration** - extracting content from existing sites and mapping to a new unified content model for a net new site with a new design system. This is NOT a lift-and-shift frontend preservation migration.
+
+**What This Analysis Measures:**
+- Content quality and structure (inline CSS % = content messiness indicator)
+- Content patterns and components across sites
+- Content extraction complexity
+- Effort to clean and map content to new content model
+
+**What This Analysis Does NOT Measure:**
+- Frontend code quality (JavaScript, performance, etc.) - not relevant for content migration
+- Framework dependencies (WP Rocket, jQuery, etc.) - not being migrated
+
+**Brand/Marketing Sites Analyzed:**
+This analysis focuses on brand/marketing websites being migrated to a centralized CMS.
+
+**Excluded from analysis:**
+- E-commerce platforms (Shopify, SAP Hybris, Shopware, etc.) - 15 sites
+- SAAS products (MatrixCare, BrightTree, HealthCareFirst, CitusHealth, etc.) - 5 sites
+- Internal tools (AirView, MyAir, OnlineStore, Career sites, etc.) - 12 sites
+- DAM systems (Brandfolder, Aprimo) - 4 sites
+- See end of document for full exclusion documentation (59 sites total)
 
 ---
 
@@ -2471,28 +2489,256 @@ All awareness sites (somnapne.se, sovnapno.dk, uniapnea.fi, etc.) show similar p
 
 ---
 
+### Content Patterns Analysis
+
+This section analyzes common content patterns across all 54 sites to inform the new unified content model design. See `content-model-recommendations.md` for full content architecture specification.
+
+#### Component Frequency Across Sites
+
+**Critical Components (95-100% of sites):**
+- **Hero Banner** (52/54 sites, 96%)
+  - Variants: Full-width image, video background, split layout
+  - Average: 1-3 heroes per site (homepage + key landing pages)
+
+- **Card Grid** (51/54 sites, 94%) - MOST COMMON PATTERN
+  - Used for: Product listings, blog posts, resource libraries, service offerings
+  - Variants: 2-column, 3-column, 4-column layouts
+  - Average: 5-15 card grids per site
+
+- **Text Block / Rich Text** (54/54 sites, 100%)
+  - All sites use rich text content areas
+  - Quality varies: 2-90% inline styling (content messiness indicator)
+
+- **CTA Block** (50/54 sites, 93%)
+  - Button-based calls to action throughout pages
+  - Variants: Primary/secondary styling, icon buttons
+
+- **Forms** (48/54 sites, 89%)
+  - Types: Contact forms, newsletter signup, lead gen, download gates
+  - Complexity: 1-15 fields per form
+  - Most complex: India (8+ forms), HubSpot sites (embedded HubSpot forms)
+
+**High Priority Components (60-80% of sites):**
+- **Media/Text Split** (44/54 sites, 81%)
+  - 50/50 image-text layouts
+  - Used for feature highlights, service descriptions
+
+- **Accordion / FAQ** (38/54 sites, 70%)
+  - Educational content, product FAQs
+  - Most common on awareness sites
+
+- **Breadcrumbs** (40/54 sites, 74%)
+  - Navigation aid, especially on deeper content sites
+
+- **Footer Navigation** (54/54 sites, 100%)
+  - Mega footers with multiple column navigation
+  - Consistency: All sites have similar footer structure
+
+**Medium Priority Components (40-60% of sites):**
+- **Carousel / Slider** (28/54 sites, 52%)
+  - Homepage features, testimonial carousels
+  - Anti-pattern: Carousels often have inline styles
+
+- **Video Embed** (31/54 sites, 57%)
+  - YouTube, Vimeo embeds
+  - Some sites have custom video players
+
+- **Testimonial Block** (24/54 sites, 44%)
+  - Customer quotes, case studies
+  - Variable implementation quality
+
+- **Stats / Metrics** (22/54 sites, 41%)
+  - Product stats, company metrics
+  - Often bespoke designs with inline styling
+
+**Low Priority Components (<40% of sites):**
+- **Tab Panels** (18/54 sites, 33%)
+- **Timeline / Process** (15/54 sites, 28%)
+- **Product Comparison Tables** (12/54 sites, 22%)
+- **Image Gallery** (16/54 sites, 30%)
+- **Newsletter Signup Block** (42/54 sites, 78%) - Standalone vs embedded in forms
+
+#### Content Type Breakdown by Site
+
+**Blog Post / Article Sites:**
+- Sites with active blogs: 38/54 (70%)
+- Average posts per blog site: 20-200 posts
+- Highest volume: resmed.com/en-us (~300+ posts), resmed.com.au (~200+ posts)
+- Blog platforms: WordPress native, HubSpot blog module
+
+**Landing Page Sites:**
+- Sites with dedicated landing pages: 45/54 (83%)
+- Average landing pages per site: 5-20 pages
+- Conversion-focused: Forms, CTAs, minimal navigation
+- HubSpot sites: Heavy use of landing page templates with inline CSS
+
+**Awareness / Educational Sites:**
+- Pure awareness sites: 6/54 (11%)
+  - deinschlaf-deintag.de, someildrommene.se, drommesovligt.dk, narval-easy.resmed.eu, sovnapne.no, etc.
+- Mixed sites with awareness sections: 28/54 (52%)
+- Content focus: Condition education, treatment options, FAQs
+- Component usage: Heavy accordion/FAQ usage, educational videos
+
+**Resource / Download Sites:**
+- Sites with resource libraries: 34/54 (63%)
+- Content types: PDFs (product guides, manuals), videos (product demos, webinars), webinars (recorded sessions)
+- Gating: 70% of resources are gated behind forms
+- Platform: WordPress media library, HubSpot file manager, custom resource portals
+
+**Product Pages:**
+- Sites with product listings: 42/54 (78%)
+- Average products per site: 10-50 products
+- Content structure: Product name, image, description, specs, downloads, CTAs
+- Variation: Some sites have extensive product hierarchies, others simple listings
+
+#### Form Complexity by Platform
+
+**WordPress Sites (27 sites):**
+- Average forms per site: 2-5 forms
+- Form plugins: Gravity Forms, Contact Form 7, WPForms
+- Complexity: Simple (1-5 fields) to moderate (6-10 fields)
+- Cleanest: ME site (3 forms, well-structured)
+
+**HubSpot Sites (21 sites):**
+- Average forms per site: 3-8 forms
+- Form tool: HubSpot native forms (embedded via iframe or JS)
+- Complexity: Moderate (6-12 fields) to complex (multi-step forms)
+- Most complex: India (8+ forms, multi-step lead gen), Brazil (5+ forms)
+- Challenge: HubSpot forms deeply integrated with MA platform
+
+**Other Platforms (6 sites):**
+- ExpressionEngine (webinars): Custom forms, moderate complexity
+- Rails SPA (airdx): Application forms, not content forms
+- Custom sites: Variable implementations
+
+#### Platform-Specific Content Patterns
+
+**WordPress/Everest Sites:**
+- **Page Builder Usage:** Minimal to moderate
+- **Gutenberg Blocks:** Some newer sites use Gutenberg (ME, CZ, PL)
+- **Classic Editor:** Older sites use TinyMCE classic editor (FI, NL, PT)
+- **Shortcodes:** Variable usage, some sites have custom shortcodes
+- **Content Quality Correlation:**
+  - Gutenberg sites: 2-15% inline styling (better structure)
+  - Classic editor sites: 15-45% inline styling (more WYSIWYG abuse)
+
+**HubSpot Sites:**
+- **Module-Based:** HubSpot sites use module system (better than WordPress WYSIWYG)
+- **Drag-and-Drop:** Content editors use drag-and-drop page builder
+- **Inline CSS Issue:** Despite modules, heavy inline styling (42% avg)
+- **Why Messy:** Content editors override module styles with inline CSS
+- **Content Quality Correlation:**
+  - Well-governed portals (ANZ, JP): 15-30% inline styling
+  - Poorly governed (EA, IN): 40-90% inline styling
+
+#### Regional Content Variations
+
+**European Sites (WordPress/Everest):**
+- Consistent structure across UK, FR, DE, ES, IT, PT
+- Shared Everest theme and components
+- Language-specific content but similar page templates
+- Quality variance: 2-3% (ME) to 35-45% (FI) inline styling
+
+**APAC Sites (Mixed platforms):**
+- AU/NZ: HubSpot ANZ portal, moderate quality (25-30% inline)
+- Japan: HubSpot JP portal, moderate quality (20-25% inline)
+- EA Instance (11 countries): Highly variable (15-55% inline)
+  - Singapore, Hong Kong: 50-60% inline (worst in EA)
+  - Korea, Thailand: 15-25% inline (better)
+- India: HubSpot IN portal, very poor quality (60-70% inline)
+
+**Americas Sites:**
+- US: WordPress DevX, excellent quality (5-10% inline)
+- Brazil: HubSpot BR portal, moderate quality (25-35% inline)
+- Mexico: HubSpot BR portal, similar to Brazil
+- LATAM: HubSpot BR portal, poor quality (70-75% inline)
+
+#### Content Governance Insights
+
+**Well-Governed Sites (2-15% inline styling):**
+- Clear content guidelines and component usage
+- Limited WYSIWYG styling options
+- Template-based page creation
+- Examples: US, ME, UK, IT, CZ, PL
+
+**Moderately Governed (15-30% inline styling):**
+- Some component structure, some freeform
+- WYSIWYG used but somewhat controlled
+- Examples: FR, DE, ES, AU, JP, BR
+
+**Poorly Governed (40-90% inline styling):**
+- Heavy WYSIWYG abuse, bespoke page designs
+- Editors building layouts in content editor
+- No apparent content guidelines
+- Examples: IN, SG, LATAM, sleepsurvey
+
+**Key Insight:** Content governance and editorial guidelines are more important than platform choice for content quality. ME site (WordPress) has 2-3% inline styling while India (also platform-based) has 60-70%.
+
+#### Migration Implications
+
+**Content Model Mapping:**
+1. **Easy Mapping (Tier 1: 2-10% inline):** Content already well-structured, maps 1:1 to new components
+2. **Moderate Mapping (Tier 2: 15-30% inline):** Need to strip some inline styles, restructure some sections
+3. **Complex Mapping (Tier 3: 40-90% inline):** Extensive restructuring required, may need manual content review
+
+**Component Library Design:**
+- New content model should include all "Critical" components (hero, cards, text, CTA, forms)
+- Include "High Priority" components (media/text split, accordion, breadcrumbs)
+- Consider "Medium Priority" as phase 2 additions
+- Avoid low-quality patterns (carousels with inline styles, bespoke stat blocks)
+
+**Content Cleanup Priority:**
+1. Strip all inline CSS (`style=""` attributes)
+2. Restructure freeform WYSIWYG content to component-based
+3. Preserve content and structure, discard presentation
+4. Map to new component library
+
+**Platform API Extraction:**
+- **WordPress:** WP REST API + WP-CLI for bulk export
+- **HubSpot:** Content API for programmatic page export
+- **ExpressionEngine:** Custom database export or scraping
+- **Rails SPA:** Application-specific extraction
+
+---
+
 ### Updated Budget & Timeline
 
-**Revised Estimates for ~60 Brand Sites:**
+**REVISED FOR CONTENT MIGRATION (Not Frontend Preservation)**
 
-**Total Hours:** 10,500-16,500 hours (down from initial 17,500-21,000)
+**Total Content Migration Effort:** 8,900-14,200 hours (down from 10,500-16,500 for frontend preservation)
 
 **Phased Approach:**
-- **Phase 1 (6-9 months):** Best sites - 1,000-1,800 hours (3-5 FTE)
-- **Phase 2 (9-15 months):** Core Everest cluster - 3,000-4,500 hours (5-8 FTE)
-- **Phase 3 (15-24 months):** HubSpot migrations - 3,500-5,500 hours (4-7 FTE)
-- **Phase 4 (24-30 months):** EA Instance + complex sites - 2,500-4,000 hours (3-6 FTE)
-- **Rebuilds (ongoing):** 500-1,700 hours (1-2 FTE)
+- **Phase 1 (5-8 months):** Pattern establishment - 850-1,500 hours (3-5 FTE)
+  - Cleanest sites (ME, CZ, PL, deinschlaf) + major markets (UK, IT)
+  - Deliverables: Extraction scripts, cleanup tooling, component mapping playbook
 
-**Team:** 14-18 FTE (with some role overlap/flex)
-**Timeline:** 30 months (down from 36 months)
-**Budget:** $5-7M (down from $7-8M)
+- **Phase 2 (8-14 months):** Core WordPress content - 2,500-3,800 hours (4-7 FTE)
+  - Remaining European Everest sites (mostly Tier 2)
+  - Apply extraction patterns, refine automation
 
-**Why Lower:**
-- Many awareness sites simpler than expected
-- Some sites already consolidated (redirects)
-- Templating opportunities (awareness sites)
-- Better Everest quality than feared (ME site proof)
+- **Phase 3 (14-22 months):** HubSpot content extraction - 2,900-4,600 hours (4-7 FTE)
+  - BR, ANZ, JP instances + awareness templates
+  - Higher cleanup effort due to presentation coupling
+
+- **Phase 4 (22-26 months):** Complex content / EA Instance - 2,100-3,400 hours (3-6 FTE)
+  - EA Instance (11 countries), Tier 3 sites
+  - Selective migration for worst sites
+
+- **Selective/Rebuilds (ongoing):** 400-900 hours (1-2 FTE)
+  - Priority page migration for IN, SG
+  - Custom extractions (airdx, narval-easy)
+
+**Team:** 12-16 FTE (content migration specialists, not frontend developers)
+**Timeline:** 26 months / ~2 years (down from 30 months)
+**Budget:** $4.5-6M (down from $5-7M)
+
+**Why Lower Than Frontend Preservation:**
+- No JavaScript modernization required
+- No WP Rocket replacement needed
+- No performance optimization migration
+- Focus on content extraction and cleanup only
+- Automated cleanup tooling reduces manual effort
+- Tier 1 sites require minimal cleanup (1x baseline effort)
 
 ---
 
